@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<title>师资队伍 - 阳光第三中学 · 学生公开信息系统</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="marquee"><span>【学校概况】我校师资力量雄厚，现有在职教师 10 人，另有名誉教师若干名（名单统计中），欢迎各位同学和家长了解。</span></div>
+  <h1 class="blink">阳光第三中学 · 学生公开信息系统</h1>
+  <div class="slogan rainbow">学高为师，身正为范！</div>
+</header>
+
+<nav class="site-nav">
+  <a href="index.html">首页登录</a>
+  <a href="register.html">新生注册</a>
+  <a href="grades.html">成绩查询</a>
+  <a href="notice.html">公告通知</a>
+  <a class="active" href="teachers.html">师资队伍</a>
+  <a href="timetable.html">课表查询</a>
+  <a href="gallery.html">校园风采</a>
+  <a href="feedback.html">意见箱</a>
+  <a href="contact.html">联系我们</a>
+</nav>
+
+<div class="wrap">
+  <div class="panel">
+    <h2>师资队伍</h2>
+    <div class="err-box" style="animation:none">以下教师按工号从小到大排列，点击“查看简介”可了解各位老师的教学风格。如需与老师联系，请优先使用电子邮箱。</div>
+    <div class="ok-box" style="animation:none">我校现有在职教师 10 人，以下为教师名录：</div>
+    <div class="field">
+      <label>教师查询</label>
+      <input type="text" id="tSearch" placeholder="请输入教师姓名">
+      <button class="btn btn-small" id="tSearchBtn">搜 索</button>
+      <div id="tSearchMsg"></div>
+    </div>
+    <div id="teacherList"></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="blink">温馨提醒：请妥善保管个人账号信息，勿向他人透露。</div>
+  <div>阳光第三中学信息技术办公室(筹备中) · 建议使用 IE 6.0 / Netscape / 800×600 分辨率浏览 · 客服电话：请拨 114 转人工</div>
+</footer>
+
+<script src="js/db.js"></script>
+<script src="js/teachers.js"></script>
+</body>
+</html>

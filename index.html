@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<title>阳光第三中学 · 学生公开信息系统 - 请先登录</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="alert('欢迎使用阳光第三中学学生公开信息系统！祝您使用愉快！')">
+<header class="site-header">
+  <div class="marquee"><span>【重要通知】欢迎使用阳光第三中学学生公开信息系统。本系统由校信息办自主开发，7×24 小时为您服务，请各位同学妥善保管个人账号信息。</span></div>
+  <h1 class="blink">阳光第三中学 · 学生公开信息系统</h1>
+  <div class="slogan rainbow">公开！透明！全心全意为全校师生服务！</div>
+</header>
+
+<nav class="site-nav">
+  <a class="active" href="index.html">首页登录</a>
+  <a href="register.html">新生注册</a>
+  <a href="grades.html">成绩查询</a>
+  <a href="notice.html">公告通知</a>
+  <a href="teachers.html">师资队伍</a>
+  <a href="timetable.html">课表查询</a>
+  <a href="gallery.html">校园风采</a>
+  <a href="feedback.html">意见箱</a>
+  <a href="contact.html">联系我们</a>
+</nav>
+
+<div class="wrap">
+  <div class="login-wrap">
+    <div class="panel side-panel">
+      <h3>今日校园 <span class="blink" style="color:#ff0000">HOT!</span></h3>
+      <ul style="line-height:2">
+        <li>初三(2)班李四同学与初三(1)班张三同学因<strong>使用了同一个密码</strong>被全校通报，双方均表示不服。</li>
+        <li>信息办提示：近期部分新生在注册时遇到<strong>“性别已被占用”</strong>提示，请更换其他性别后重试。</li>
+        <li>食堂窗口师傅提醒：找零系统存在 0.01 元误差，属正常现象。</li>
+        <li>热烈祝贺我校排球队在区比赛中荣获<strong>倒数第二名</strong>！</li>
+        <li><a href="http://school.example.cn" target="_blank">点击访问学校官方网站</a></li>
+      </ul>
+    </div>
+
+    <div class="panel login-box">
+      <h2>学生登录 <span class="blink" style="color:#ff0000">NEW!!</span></h2>
+      <div class="field">
+        <label for="username">用户名</label>
+        <input type="text" id="username" placeholder="请输入用户名或学号">
+      </div>
+      <div class="field">
+        <label for="password" class="lbl-far">密码</label>
+        <input type="password" id="password" maxlength="5" placeholder="请输入密码">
+      </div>
+      <div class="field">
+        <label for="captcha">验证码</label>
+        <input type="text" id="captcha" style="width:90px">
+        <span class="captcha" id="capShow"></span>
+        <button type="button" class="btn btn-small" id="capRefresh">换一张</button>
+      </div>
+      <div class="field">
+        <label><input type="checkbox" id="isTeacher"> 我是老师</label>
+        <label><input type="checkbox" id="remember"> 记住密码</label>
+      </div>
+      <div id="loginMsg"></div>
+      <button class="btn btn-big" id="loginBtn">登 录</button>
+      <div style="margin-top:14px">
+        <a href="#" id="forgotLink">忘记密码？</a>
+        <a href="register.html">没有账号？去注册</a>
+      </div>
+      <div id="forgotBox"></div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="blink">温馨提醒：请妥善保管个人账号信息，勿向他人透露。</div>
+  <div>阳光第三中学信息技术办公室(筹备中) · 建议使用 IE 6.0 / Netscape / 800×600 分辨率浏览 · 客服电话：请拨 114 转人工</div>
+</footer>
+
+<script src="js/db.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<title>新生注册 - 阳光第三中学 · 学生公开信息系统</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="marquee"><span>【重要通知】2028 级新生注册通道已开启，请各位新生如实填写注册信息，信息审核结果以后续通知为准。</span></div>
+  <h1 class="blink">阳光第三中学 · 学生公开信息系统</h1>
+  <div class="slogan rainbow">欢迎报考阳光第三中学！</div>
+</header>
+
+<nav class="site-nav">
+  <a href="index.html">首页登录</a>
+  <a class="active" href="register.html">新生注册</a>
+  <a href="grades.html">成绩查询</a>
+  <a href="notice.html">公告通知</a>
+  <a href="teachers.html">师资队伍</a>
+  <a href="timetable.html">课表查询</a>
+  <a href="gallery.html">校园风采</a>
+  <a href="feedback.html">意见箱</a>
+  <a href="contact.html">联系我们</a>
+</nav>
+
+<div class="wrap">
+  <div class="panel">
+    <h2>新生注册</h2>
+    <div class="err-box" style="animation:none">
+      注册须知：1. 请如实填写以下信息；2. 注册成功后，系统将出于安全考虑为每位新生重新分配学号，请以分配结果为准；3. 如遇“已被占用”提示，请更换相应信息后重试。
+    </div>
+    <div class="ok-box" style="animation:none">
+      信息办提示：近期部分新生在注册时遇到“性别已被占用”提示，请更换其他性别后重试；如仍无法完成注册，请携带本人身份证明到信息办现场办理。
+    </div>
+
+    <div class="field"><label>姓名</label><input type="text" id="rName" placeholder="请输入真实姓名"></div>
+    <div class="field"><label>学号</label><input type="text" id="rSid" placeholder="8 位数字，例如 20230101"></div>
+    <div class="field"><label>性别</label>
+      <label style="width:auto"><input type="radio" name="gender" value="男"> 男</label>
+      <label style="width:auto"><input type="radio" name="gender" value="女"> 女</label>
+      <span id="genderMsg"></span>
+    </div>
+    <div class="field"><label>入学年份</label><input type="number" id="rEnroll" placeholder="例如 2023"></div>
+    <div class="field"><label>用户名</label><input type="text" id="rUsername" placeholder="登录用，仅限字母数字"></div>
+    <div class="field"><label>密码</label><input type="password" id="rPassword" placeholder="请输入密码（至少 6 位）"></div>
+    <div class="field"><label>密码强度</label>
+      <div class="strength-bar"><div class="strength-fill" id="pwBar"></div></div>
+      <span id="pwLevel" style="color:#800080;font-weight:bold">-</span>
+    </div>
+    <div class="field"><label>确认密码</label><input type="password" id="rConfirm" placeholder="请再次输入密码"></div>
+    <div class="field"><label>血型</label>
+      <select id="rBlood">
+        <option value="">请选择</option>
+        <option>A</option><option>B</option><option>AB</option><option>O</option>
+        <option>其他</option>
+      </select>
+    </div>
+
+    <div id="regMsg"></div>
+    <button class="btn btn-big" id="regBtn">注 册</button>
+    <button class="btn" id="resetBtn" type="button">重 置</button>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="blink">温馨提醒：请妥善保管个人账号信息，勿向他人透露。</div>
+  <div>阳光第三中学信息技术办公室(筹备中) · 建议使用 IE 6.0 / Netscape / 800×600 分辨率浏览 · 客服电话：请拨 114 转人工</div>
+</footer>
+
+<script src="js/db.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>
